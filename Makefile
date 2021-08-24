@@ -9,5 +9,7 @@ main.o: main.cpp
 hello: greetings.o main.o 
 	g++ -o hello greetings.o main.o 
 
+test: 
+	./hello > test.out
 clean:
 	rm -rf hello *.o
